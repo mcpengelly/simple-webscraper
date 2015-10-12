@@ -5,12 +5,12 @@ var fs = require('fs');
 
 prompt.start();
 
-var url = 'XXXXX';
+var url = 'http://www.imdb.com/title/tt3659388/';
 
-prompt.get(['url'], function(err, result){
+/*prompt.get(['url'], function(err, result){
 	if (err) throw err;
 	url = result.url;
-});
+});*/
 
 request(url, function(err, res, html) {
 	if (!err) {
