@@ -3,7 +3,7 @@ var request = require('request');
 var prompt = require('prompt');
 var fs = require('fs');
 
-prompt.start();
+//prompt.start();
 
 var url = 'http://www.imdb.com/title/tt3659388/';
 
@@ -14,8 +14,8 @@ var url = 'http://www.imdb.com/title/tt3659388/';
 
 request(url, function(err, res, html) {
 	if (!err) {
-		var title, datePublished, rating;
-		var json = { title: '', datePublished: '', rating: '' };
+		var title, datePublished, rating, description;
+		var json = { title: '', datePublished: '', rating: '', description: ''};
 		var $ = cheerio.load(html);
 
 		$('.header').filter(function() {
@@ -26,6 +26,12 @@ request(url, function(err, res, html) {
 
 			json.title = title;
 			json.datePublished = datePublished;
+		});
+
+		$("#title-overview-widget").filter(function() {
+			var element = $(this);
+			description = element.children().find('p').first().next().text().trim();
+			json.description = description;
 		});
 
 		$('.star-box-giga-star').filter(function() {
