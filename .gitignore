@@ -27,4 +27,4 @@ build/Release
 node_modules
 
 # more
-theMartianIMBD.json
+movieInfo.json
