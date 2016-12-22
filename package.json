@@ -1,25 +1,25 @@
 {
-  "name": "web-scraper",
+  "name": "simple-webscraper",
   "version": "1.0.0",
-  "description": "simple web scraper",
+  "description": "",
   "main": "app.js",
-  "dependencies": {
-    "cheerio": "^0.19.0",
-    "readline-sync": "^1.2.21",
-    "request": "^2.65.0"
-  },
-  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Matthew Pengelly",
-  "license": "MIT",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/mcpengelly/simple-webscraper.git"
   },
+  "author": "",
+  "license": "ISC",
   "bugs": {
     "url": "https://github.com/mcpengelly/simple-webscraper/issues"
   },
-  "homepage": "https://github.com/mcpengelly/simple-webscraper#readme"
+  "homepage": "https://github.com/mcpengelly/simple-webscraper#readme",
+  "dependencies": {
+    "cheerio": "^0.22.0",
+    "node-cron": "^1.1.2",
+    "pg": "^6.1.2",
+    "request": "^2.79.0"
+  }
 }
