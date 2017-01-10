@@ -1,3 +1,5 @@
+//need server on start to trigger scraper.js
+
 //deps
 var express = require('express');
 var path = require('path');

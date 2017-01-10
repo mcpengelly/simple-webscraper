@@ -6,8 +6,7 @@ var hostname = 'http://www.imdb.com';
 var path = '/movies-coming-soon';
 var url = hostname + path;
 
-//use express?
-//hook in db?
+//have scheduled job make a request to application endpoint after scraping data
 
 //schedule task every minute for now - debugging
 cron.schedule('* * * * *', function(){

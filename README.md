@@ -1,3 +1,3 @@
 # simple-webscraper
 
-a scheduled job that scrapes upcoming movies/info from imdb
+a scheduled webscraper that collects upcoming movies/info from imdb and puts them into a database for further use
